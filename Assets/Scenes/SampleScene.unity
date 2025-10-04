@@ -218,8 +218,8 @@ RectTransform:
   - {fileID: 268882327}
   - {fileID: 1050053108}
   - {fileID: 818479353}
-  - {fileID: 1515295782}
   - {fileID: 1860557148}
+  - {fileID: 1515295782}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1431,6 +1431,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78e2d02ded44f64faba961e6450139a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BattleSystem
+  deck: {fileID: 879584289}
+  hand: {fileID: 1515295784}
 --- !u!4 &1217424014
 Transform:
   m_ObjectHideFlags: 0
@@ -1492,7 +1494,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515295781}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
   m_Name: 

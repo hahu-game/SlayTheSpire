@@ -1,16 +1,14 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class EnemyObj : MonoBehaviour
+public class EnemyObj : MonoBehaviour,IDropHandler
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    //カードをドロップしたときにログを出す
 
-    // Update is called once per frame
-    void Update()
+
+    public void OnDrop(PointerEventData eventData)
     {
-        
+        Debug.Log("ドロップされた");
+        // ↓カード効果を実行
     }
 }

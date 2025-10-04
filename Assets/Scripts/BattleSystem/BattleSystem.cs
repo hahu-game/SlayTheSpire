@@ -22,10 +22,15 @@ public class BattleSystem : MonoBehaviour
     BattleCardSelectionState cardSelectionState;
     BattleStateBase currentState;
 
+    [SerializeField] Deck deck;
+    [SerializeField] Hand hand;
+
     //PlayerDrawStateなどを外部クラスに対して公開だけしている。（読み取り専用）
     //外部クラスの中でChangeStateを呼び出すがそのときの変数で、これらを指定する必要があるため。
     //あくまで読み取り専用なので、PlayerDrawStateの中身をBattlePlayerStatesの中で編集などはできない。（保守性が高い）
-    public BattlePlayerDrawState PlayerDrawState { get => playerDrawState; } 
+    public BattlePlayerDrawState PlayerDrawState { get => playerDrawState; }
+    public Deck Deck { get => deck;} //plivateなdeckを、読み取り専用でpublicなDeckに入れてる
+    public Hand Hand { get => hand;}
 
     private void Start()
     {

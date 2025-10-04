@@ -6,7 +6,9 @@ public class BattleStateBase // MonoBehaviourを継承しない　→Unityの性質がない
     //誰の状態か：BattleSystemの状態を考える
     protected BattleSystem Owner;
 
-    //コンストラクタ：初期化処理：生成時に呼ばれる
+    //コンストラクタ：初期化処理：生成時に呼ばれる。
+    //クラス名と同じ名前のメソッドなのでコンストラクタ化されている。
+    //コンストラクタは、オブジェクト生成時に必ず実行される特別なメソッド。
     public BattleStateBase(BattleSystem owner)
     {
         Owner = owner; 
